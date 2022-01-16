@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>PokemonGame</id>
+    <version>1.0.0</version>
+    <authors>PokemonGame</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe" target="lib\net472\PokemonGame.exe" />
+  </files>
+</package>
