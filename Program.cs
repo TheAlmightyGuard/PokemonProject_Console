@@ -24,6 +24,7 @@ namespace PokemonGame.Main
         public class variables
         {
             public static bool YWinner = false;
+            public static string Current_Version = "V. 1";
         }
 
         public static string[] dllNames =
