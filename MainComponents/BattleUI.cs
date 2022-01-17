@@ -210,8 +210,9 @@ namespace PokemonGame.MainComponents
                 key = infokey.Key;
 
 
-                if (key == ConsoleKey.RightArrow)
+                if (key == ConsoleKey.RightArrow || key == ConsoleKey.D)
                 {
+                    Thread.Sleep(5);
                     MusicPlayerC.ButtonClick();
                     resetActionLine();
                     int a = i;
@@ -232,8 +233,9 @@ namespace PokemonGame.MainComponents
                         currentCords = chosenXX;
                     }
                 }
-                else if (key == ConsoleKey.LeftArrow)
+                else if (key == ConsoleKey.LeftArrow || key == ConsoleKey.A)
                 {
+                    Thread.Sleep(5);
                     MusicPlayerC.ButtonClick();
                     resetActionLine();
 
@@ -326,6 +328,60 @@ namespace PokemonGame.MainComponents
             Console.SetCursorPosition(X_, 38);
 
             Console.Write("+--------------------------------------------------------------------------------+");  
+        }
+
+        public static void AttackBox()
+        {
+            StopBlinking();
+
+            Console.ResetColor();
+
+            Console.SetCursorPosition(66, 31);
+
+            Console.Write("+------------------------------------------------------------------------------------+");
+
+
+            Console.SetCursorPosition(66, 32);
+
+
+            Console.Write("|                                               Choose your item!                    |");
+
+            Console.SetCursorPosition(66, 33);
+
+            Console.Write("|                                                                                    |");
+
+            Console.SetCursorPosition(66, 34);
+
+            Console.Write("|                                                                                    |");
+
+            Console.SetCursorPosition(66, 35);
+
+
+            Console.Write(string.Format("|     {0,-13}     {1,-13}     {2,-13}     {3,-13}         |",
+                                           pokeInformation.advInfo.MOVENAMES[0],
+
+                                           pokeInformation.advInfo.MOVENAMES[1],
+
+                                           pokeInformation.advInfo.MOVENAMES[2],
+
+                                          pokeInformation.advInfo.MOVENAMES[3]));
+
+            Console.SetCursorPosition(66, 36);
+
+            Console.Write(string.Format("|      {0,-8}           {1,-8}          {2,-8}        {3,-8}                |",
+                                          $"[{pokeInformation.advInfo.CurrUsesAR[0]}/{pokeInformation.advInfo.MaxUsesAR[0]}]",
+
+                                          $"[{pokeInformation.advInfo.CurrUsesAR[0]}/{pokeInformation.advInfo.MaxUsesAR[0]}]",
+
+                                          $"[{pokeInformation.advInfo.CurrUsesAR[0]}/{pokeInformation.advInfo.MaxUsesAR[0]}]",
+
+                                          $"[{pokeInformation.advInfo.CurrUsesAR[0]}/{pokeInformation.advInfo.MaxUsesAR[0]}]"));
+
+            Console.SetCursorPosition(66, 37);
+            Console.Write("|                                                                                    |");
+
+            Console.SetCursorPosition(66, 38);
+            Console.Write("+------------------------------------------------------------------------------------+");
         }
 
         public static void InventoryBox()
@@ -514,6 +570,7 @@ namespace PokemonGame.MainComponents
                     }
                 }
                 Console.ResetColor();
+
             }
             else
             {

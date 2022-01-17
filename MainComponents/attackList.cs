@@ -22,7 +22,7 @@ namespace PokemonGame.MainComponents.AttackList
 
         public static void Get4Moves()
         {
-            //GetInfo();
+            GetInfo();
             List<int> MaxUsesLIST = new List<int>();
             List<string> MoveNameLIST = new List<string>();
             List<string> TypeList = new List<string>();
@@ -52,7 +52,7 @@ namespace PokemonGame.MainComponents.AttackList
                         lastnum.Add(arrayINT);
                         break;
                     }
-                } while (true);
+                } while (i<=4);
             }
 
             pokeInformation.advInfo.MOVENAMES = MoveNameLIST.ToArray();

@@ -47,8 +47,9 @@ namespace PokemonGame.MainComponents.Main
                     if (i == 0)
                     {
                         MusicPlayerC.ButtonClick();
-                        Console.Clear();
-                        ActionBoxes.attackBox(userInformation.username, pokeInformation.basicInfo.pokemon, Convert.ToInt32(pokeInformation.basicInfo.Health), Convert.ToInt32(pokeInformation.basicInfo.ENEMY_Health), firstMove);
+                        //ActionBoxes.attackBox(userInformation.username, pokeInformation.basicInfo.pokemon, Convert.ToInt32(pokeInformation.basicInfo.Health), Convert.ToInt32(pokeInformation.basicInfo.ENEMY_Health), firstMove);
+
+                        BattleUI.AttackBox();
                         string chosen = Console.ReadLine();
                         
                         if (Array.IndexOf(pokeInformation.advInfo.MOVENAMES_LOWER, chosen.ToLower().TrimEnd()) >= 0)
