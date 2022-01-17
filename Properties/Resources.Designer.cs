@@ -179,6 +179,7 @@ namespace PokemonGame.Properties {
         }
         
         /// <summary>
+<<<<<<< HEAD
         ///   Recherche une chaîne localisée semblable à Confusion,50,15,100,PSYCHIC
         ///Ancient Power,60,15,100,ROCK
         ///Psycho Cut,70,15,100,PSYCHIC
@@ -192,6 +193,9 @@ namespace PokemonGame.Properties {
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Rock Throw,50,10,85,Rock
+=======
+        ///   Looks up a localized string similar to Rock Throw,50,10,85,Rock
+>>>>>>> parent of 20aad4e (Update v1.1)
         ///Tackle,40,10,100,Normal
         ///Smack Down,50,10,100,Rock
         ///Dragon Breath,60,10,100,Dragon

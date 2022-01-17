@@ -1,3 +1,14 @@
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe.config
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.pdb
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.Properties.Resources.resources
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.GenerateResource.cache
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.AssemblyInfoInputs.cache
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.AssemblyInfo.cs
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.CoreCompileInputs.cache
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.exe
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.pdb
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.pdb
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.Properties.Resources.resources
@@ -8,18 +19,33 @@
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.exe
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.pdb
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csprojAssemblyReference.cache
+<<<<<<< HEAD
+=======
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\DnsClient.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Bson.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Driver.Core.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Driver.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Libmongocrypt.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\NAudio.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\SharpCompress.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\System.Buffers.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\System.Runtime.CompilerServices.Unsafe.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\System.Text.Encoding.CodePages.dll
+\\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.CopyComplete
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\DnsClient.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Bson.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Driver.Core.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Driver.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\MongoDB.Libmongocrypt.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\NAudio.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\SharpCompress.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\System.Buffers.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.CopyComplete
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.exe.config
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\System.Text.Encoding.CodePages.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.AssemblyReference.cache
+>>>>>>> parent of 20aad4e (Update v1.1)
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe.config
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.exe.config
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.exe.config
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.AssemblyReference.cache
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.exe.config
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.Properties.Resources.resources
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.GenerateResource.cache
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.AssemblyInfoInputs.cache
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.AssemblyInfo.cs
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.csproj.CoreCompileInputs.cache
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.exe
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\obj\Debug\net472\PokemonGame.pdb
-C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\PokemonGame.pdb
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.3)\bin\Debug\net472\Newtonsoft.Json.dll
