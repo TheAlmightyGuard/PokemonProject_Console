@@ -6,7 +6,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using PokemonGame.FunctionClasses.InventoryMain;
 using PokemonGame.informationClass;
-using PokemonGame.FunctionClasses.MusicPlayer;
 
 namespace PokemonGame.MainComponents
 {
@@ -212,8 +211,11 @@ namespace PokemonGame.MainComponents
 
                 if (key == ConsoleKey.RightArrow || key == ConsoleKey.D)
                 {
+<<<<<<< HEAD
                     Thread.Sleep(5);
                     MusicPlayerC.ButtonClick();
+=======
+>>>>>>> parent of 20aad4e (Update v1.1)
                     resetActionLine();
                     int a = i;
                     a++;
@@ -235,8 +237,11 @@ namespace PokemonGame.MainComponents
                 }
                 else if (key == ConsoleKey.LeftArrow || key == ConsoleKey.A)
                 {
+<<<<<<< HEAD
                     Thread.Sleep(5);
                     MusicPlayerC.ButtonClick();
+=======
+>>>>>>> parent of 20aad4e (Update v1.1)
                     resetActionLine();
 
                     int a = i;
@@ -259,25 +264,21 @@ namespace PokemonGame.MainComponents
                 }
                 else if (key == ConsoleKey.A)
                 {
-                    MusicPlayerC.ButtonClick();
                     i = 0;
                     break;
                 }
                 else if (key == ConsoleKey.I)
                 {
-                    MusicPlayerC.ButtonClick();
                     i = 1;
                     break;
                 }
                 else if (key == ConsoleKey.P)
                 {
-                    MusicPlayerC.ButtonClick();
                     i = 2;
                     break;
                 }
                 else if (key == ConsoleKey.R)
                 {
-                    MusicPlayerC.ButtonClick();
                     i = 3;
                     break;
                 }
