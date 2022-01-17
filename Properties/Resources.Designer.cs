@@ -179,6 +179,18 @@ namespace PokemonGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confusion,50,15,100,PSYCHIC
+        ///Ancient Power,60,15,100,ROCK
+        ///Psycho Cut,70,15,100,PSYCHIC
+        ///Psystrike,100,20,100,PSYCHIC.
+        /// </summary>
+        public static string Mewtwo {
+            get {
+                return ResourceManager.GetString("Mewtwo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rock Throw,50,10,85,Rock
         ///Tackle,40,10,100,Normal
         ///Smack Down,50,10,100,Rock

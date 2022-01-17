@@ -4,33 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Media;
 using System.IO;
-
-using NAudio.Wave;
 using PokemonGame.informationClass;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using PokemonGame;
 
 namespace PokemonGame.FunctionClasses.MusicPlayer
 {
+
     class MusicPlayerC
     {
-
         public static bool playingHealth = false;
         public static Random rndm = new Random();
-        public static WaveOutEvent OpeningPlayer = new WaveOutEvent();
-        public static WaveOutEvent EffectPlayer = new WaveOutEvent();
+        public static NAudio.Wave.WaveOutEvent OpeningPlayer = new NAudio.Wave.WaveOutEvent();
+        public static NAudio.Wave.WaveOutEvent EffectPlayer = new NAudio.Wave.WaveOutEvent();
 
-        public static WaveOutEvent HealthPlayer = new WaveOutEvent();
-        public static WaveOutEvent BattleMPlayer = new WaveOutEvent();
-        public static WaveOutEvent EndPlayer = new WaveOutEvent();
+        public static NAudio.Wave.WaveOutEvent HealthPlayer = new NAudio.Wave.WaveOutEvent();
+        public static NAudio.Wave.WaveOutEvent BattleMPlayer = new NAudio.Wave.WaveOutEvent();
+        public static NAudio.Wave.WaveOutEvent EndPlayer = new NAudio.Wave.WaveOutEvent();
 
         public static void CrySound()
         {
             EffectPlayer.Dispose();
 
             var url = "https://drive.google.com/uc?export=download&id=1wMPRtI2yfUoIRS5uf89YomYzPTIPznJa";
-            using (var mf = new MediaFoundationReader(url))
+            using (var mf = new NAudio.Wave.MediaFoundationReader(url))
             {
-                WaveChannel32 volumeStream = new WaveChannel32(mf);
+                NAudio.Wave.WaveChannel32 volumeStream = new NAudio.Wave.WaveChannel32(mf);
 
                 EffectPlayer.Init(volumeStream);
 
@@ -49,7 +49,7 @@ namespace PokemonGame.FunctionClasses.MusicPlayer
 
             if (pokeInformation.basicInfo.ENEMY_TYPENUM == 1)
             {
-                using (var mf = new MediaFoundationReader(wild[rndm.Next(0, 2)]))
+                using (var mf = new NAudio.Wave.MediaFoundationReader(wild[rndm.Next(0, 2)]))
                 {
                     LoopStream loop = new LoopStream(mf);
 
@@ -60,7 +60,7 @@ namespace PokemonGame.FunctionClasses.MusicPlayer
             }
             else
             {
-                using (var mf = new MediaFoundationReader(gym[rndm.Next(0, 2)]))
+                using (var mf = new NAudio.Wave.MediaFoundationReader(gym[rndm.Next(0, 2)]))
                 {
                     LoopStream loop = new LoopStream(mf);
 
@@ -78,7 +78,7 @@ namespace PokemonGame.FunctionClasses.MusicPlayer
 
             string[] url = { "https://drive.google.com/uc?export=download&id=1DLQYgdeI_VpUwfXYj15KVU0R1NvBSlqo", "https://drive.google.com/uc?export=download&id=1SsNOB0rqHakP3fKfAmaO7qHYnMBjf10e", "https://drive.google.com/uc?export=download&id=1pqNDLPbNyzEzu4gKmoCE3SxzramZlPcS" };
 
-            using (var mf = new MediaFoundationReader(url[rndm.Next(0, 2)]))
+            using (var mf = new NAudio.Wave.MediaFoundationReader(url[rndm.Next(0, 2)]))
             {
                 LoopStream loop = new LoopStream(mf);
 
@@ -102,7 +102,7 @@ namespace PokemonGame.FunctionClasses.MusicPlayer
 
 
 
-            using (var mf = new MediaFoundationReader(url[rndm.Next(0,5)]))
+            using (var mf = new NAudio.Wave.MediaFoundationReader(url[rndm.Next(0,5)]))
             {
                 LoopStream loop = new LoopStream(mf);
 
@@ -116,8 +116,8 @@ namespace PokemonGame.FunctionClasses.MusicPlayer
         {
             EffectPlayer.Dispose();
             //var url = "https://drive.google.com/uc?export=download&id=1utFlYne1K7vkJOD5pQddHmACT0SxDOk1";
-            WaveStream reader = new WaveFileReader(Properties.Resources.ButtonClicked);
-            WaveChannel32 volumeStream = new WaveChannel32(reader);
+            NAudio.Wave.WaveStream reader = new NAudio.Wave.WaveFileReader(Properties.Resources.ButtonClicked);
+            NAudio.Wave.WaveChannel32 volumeStream = new NAudio.Wave.WaveChannel32(reader);
 
             EffectPlayer.Init(volumeStream);
 
@@ -131,7 +131,7 @@ namespace PokemonGame.FunctionClasses.MusicPlayer
 
             string url = "https://drive.google.com/uc?export=download&id=1PNhnjUAXVQCYtcHiebEFQBY5OgxYlRog";
 
-            using (var mf = new MediaFoundationReader(url))
+            using (var mf = new NAudio.Wave.MediaFoundationReader(url))
             {
                 LoopStream loop = new LoopStream(mf);
 

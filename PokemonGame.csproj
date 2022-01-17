@@ -21,6 +21,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DLLs\DnsClient.dll" />
+    <None Remove="DLLs\MongoDB.Bson.dll" />
+    <None Remove="DLLs\MongoDB.Driver.Core.dll" />
+    <None Remove="DLLs\MongoDB.Driver.dll" />
+    <None Remove="DLLs\MongoDB.Libmongocrypt.dll" />
+    <None Remove="DLLs\NAudio.dll" />
+    <None Remove="DLLs\Newtonsoft.Json.dll" />
+    <None Remove="DLLs\SharpCompress.dll" />
+    <None Remove="DLLs\System.Buffers.dll" />
+    <None Remove="DLLs\System.Net.Http.dll" />
+    <None Remove="DLLs\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Remove="DLLs\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <None Remove="DLLs\System.Text.Encoding.CodePages.dll" />
     <None Remove="DnsClient - Copier.dll" />
     <None Remove="DnsClient.dll" />
     <None Remove="MongoDB - Copier.Bson.dll" />
@@ -41,9 +54,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="DLLs\DnsClient.dll" />
+    <EmbeddedResource Include="DLLs\MongoDB.Bson.dll" />
+    <EmbeddedResource Include="DLLs\MongoDB.Driver.Core.dll" />
+    <EmbeddedResource Include="DLLs\MongoDB.Driver.dll" />
+    <EmbeddedResource Include="DLLs\MongoDB.Libmongocrypt.dll" />
+    <EmbeddedResource Include="DLLs\Newtonsoft.Json.dll" />
+    <EmbeddedResource Include="DLLs\SharpCompress.dll" />
+    <EmbeddedResource Include="DLLs\System.Buffers.dll" />
+    <EmbeddedResource Include="DLLs\System.Net.Http.dll" />
+    <EmbeddedResource Include="DLLs\System.Runtime.CompilerServices.Unsafe.dll" />
+    <EmbeddedResource Include="DLLs\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <EmbeddedResource Include="DLLs\System.Text.Encoding.CodePages.dll" />
     <EmbeddedResource Include="Resources\DnsClient.dll" />
     <EmbeddedResource Include="Resources\MongoDB.Bson.dll" />
-    <EmbeddedResource Include="Resources\MongoDB.Driver.Core.dll" />
+    <EmbeddedResource Include="Resources\MongoDB.Driver.Core.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\MongoDB.Driver.dll" />
     <EmbeddedResource Include="Resources\MongoDB.Libmongocrypt.dll" />
     <EmbeddedResource Include="Resources\SharpCompress.dll" />
@@ -83,45 +110,120 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="DLLs\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
     <Folder Include="NAudio\" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="DnsClient">
       <HintPath>DLLs\DnsClient.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="MongoDB.Bson">
       <HintPath>DLLs\MongoDB.Bson.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="MongoDB.Driver">
       <HintPath>DLLs\MongoDB.Driver.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>DLLs\MongoDB.Driver.Core.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>DLLs\MongoDB.Libmongocrypt.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="NAudio">
-      <HintPath>DLLs\NAudio.dll</HintPath>
+      <HintPath>bin\Debug\net472\DLLs\NAudio.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>DLLs\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>DLLs\SharpCompress.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="System.Buffers">
       <HintPath>DLLs\System.Buffers.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http">
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>DLLs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
     <Reference Include="System.Text.Encoding.CodePages">
       <HintPath>DLLs\System.Text.Encoding.CodePages.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="DLLs\DnsClient.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\MongoDB.Bson.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\MongoDB.Driver.Core.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\MongoDB.Driver.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\MongoDB.Libmongocrypt.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\NAudio.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\SharpCompress.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\System.Buffers.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\System.Net.Http.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\System.Runtime.CompilerServices.Unsafe.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="DLLs\System.Text.Encoding.CodePages.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

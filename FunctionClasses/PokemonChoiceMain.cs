@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using PokemonGame.MainDes;
-using PokemonGame.Main;
+using PokemonGame;
 using PokemonGame.informationClass;
 using System.Media;
 using PokemonGame.FunctionClasses.MusicPlayer;

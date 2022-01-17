@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using PokemonGame.MainComponents.actionBoxes;
 using PokemonGame.MainComponents.AttackList;
 using PokemonGame.MainComponents.attackMain;
-using PokemonGame.Main;
+using PokemonGame;
 using PokemonGame.FunctionClasses.InventoryMain;
 using PokemonGame.FunctionClasses.HealthManip;
 using PokemonGame.FunctionClasses.PokemonChoice;

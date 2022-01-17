@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NAudio.Wave;
 
 namespace PokemonGame
 {
-    public class LoopStream : WaveStream
+    public class LoopStream : NAudio.Wave.WaveStream
     {
-        WaveStream sourceStream;
+        NAudio.Wave.WaveStream sourceStream;
 
-        public LoopStream(WaveStream sourceStream)
+        public LoopStream(NAudio.Wave.WaveStream sourceStream)
         {
             this.sourceStream = sourceStream;
             this.EnableLooping = true;
@@ -19,7 +18,7 @@ namespace PokemonGame
 
         public bool EnableLooping { get; set; }
 
-        public override WaveFormat WaveFormat
+        public override NAudio.Wave.WaveFormat WaveFormat
         {
             get { return sourceStream.WaveFormat; }
         }

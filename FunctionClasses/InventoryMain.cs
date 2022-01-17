@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using PokemonGame.MainDes;
 using PokemonGame.FunctionClasses.HealthManip;
 using PokemonGame.informationClass;
-using PokemonGame.Main;
+using PokemonGame;
 
 namespace PokemonGame.FunctionClasses.InventoryMain
 {

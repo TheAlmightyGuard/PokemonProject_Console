@@ -9,6 +9,7 @@ using PokemonGame.informationClass;
 using PokemonGame;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Reflection;
 using System.Security.Cryptography;
 
@@ -16,9 +17,13 @@ using System.Runtime.InteropServices;
 
 using NAudio.Wave;
 using System.Threading.Tasks;
+using System.Net;
+using System.ComponentModel;
+using System.Net.Http;
 
-namespace PokemonGame.Main
+namespace PokemonGame
 {
+
     public class ProgramMain
     {
         public class variables
@@ -35,28 +40,87 @@ namespace PokemonGame.Main
             "MongoDB.Driver.dll",
             "MongoDB.Libmongocrypt.dll",
             "NAudio.dll",
+            "Newtonsoft.Json.dll",
+            "System.Net.Http.dll",
+            "System.Runtime.InteropServices.RuntimeInformation.dll",
             "SharpCompress.dll",
-            "Sytem.Buffers",
+            "System.Buffers.dll",
             "System.Runtime.CompilerServices.Unsafe.dll",
             "System.Text.Encoding.CodePages.dll"
         };
 
-        
+        public static List<string> dllListFound = new List<string>();
 
+        public static List<string> MissingDLL = new List<string>();
+
+        public static string filePathFound = string.Empty;
+
+        [Obsolete]
         public static void Main(string[] args)
         {
-            
+            string filepath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"DLLs");
+            DirectoryInfo d = new DirectoryInfo(filepath);
+
+            AppDomain.CurrentDomain.AppendPrivatePath(filepath);
+
+            Console.WriteLine("Checking DLL files..");
+
+            foreach (var dll in d.GetFiles("*.dll"))
+            {
+                Assembly.Load(File.ReadAllBytes(dll.FullName));
+                dllListFound.Add(dll.Name);
+            }
+
+            foreach (string dllName in dllNames)
+            {
+                if (!dllListFound.Contains(dllName))
+                {
+                    MissingDLL.Add(dllName);
+                }
+            }
+
+            Console.CursorVisible = false;
+
+
+            if (MissingDLL.ToArray().Length >= 1)
+            {
+                int missingDownloaded = 0;
+                Console.WriteLine("Downloading DLL files... (" + missingDownloaded + " / " + MissingDLL.Count + ")");
+                string exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+                WebClient client = new WebClient();
+                foreach (string i in MissingDLL)
+                {
+                    Task.Delay(4000);
+                    Uri URL = new Uri("https://github.com/TheAlmightyGuard/PokemonProject_Console/raw/master/DLLs/" + i);
+                    client.DownloadFile(URL, i);
+
+                    string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), i);
+                    string destPath = Path.Combine(filepath, i);
+                    File.Move(i, destPath);
+                    Assembly.Load(File.ReadAllBytes(destPath));
+                    missingDownloaded++;
+                    Console.SetCursorPosition(26, 1);
+                    Console.Write(missingDownloaded);
+                    Console.SetCursorPosition(0,3);
+                }
+            }
+
+            Console.SetCursorPosition(0, 3);
+            Console.WriteLine("All DLLs loaded!");
+            Console.ReadKey();
+            Console.Clear();
             MainRun();
         }
 
-        static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        private static void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("PokemonGame.Resources.NAudio.dll"))
-            {
-                var assemblyData = new Byte[stream.Length];
-                stream.Read(assemblyData, 0, assemblyData.Length);
-                return Assembly.Load(assemblyData);
-            }
+            Console.WriteLine("Download Completed!");
+        }
+
+        private static void client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            Console.WriteLine("Missing DLLs! Downloading..");
         }
 
         public static void OpeningLoading()
@@ -329,6 +393,19 @@ namespace PokemonGame.Main
             userInformation.user_LVL = 100;
             userInformation.user_COINS = 10000;
             userInformation.user_ID = "DEVELOPER_ID";
+
+            pokeInformation.basicInfo.pokemon = "Mewtwo";
+            pokeInformation.basicInfo.accuracy = 100;
+            pokeInformation.basicInfo.levelPokemon = 999;
+            pokeInformation.basicInfo.Health = 999;
+
+            pokeInformation.basicInfo.ATTACK = 110;
+            pokeInformation.basicInfo.DEFENSE = 90;
+            pokeInformation.basicInfo.Sp_Atk = 154;
+            pokeInformation.basicInfo.Sp_Def = 90;
+            pokeInformation.basicInfo.Speed = 130;
+
+            pokeInformation.basicInfo.pokemon_EXP = 999;
         }
 
         public static void loadAllInformation(string user, Guid ID)
@@ -348,7 +425,6 @@ namespace PokemonGame.Main
             pokeInformation.basicInfo.pokemon = firstPokemon.Pkmn_NAME;
             pokeInformation.basicInfo.accuracy = firstPokemon.ACCURACY_P;
             pokeInformation.basicInfo.levelPokemon = firstPokemon.LVL;
-            pokeInformation.basicInfo.Health = firstPokemon.HEALTH;
 
             pokeInformation.basicInfo.Health = firstPokemon.HEALTH;
             pokeInformation.basicInfo.ATTACK = firstPokemon.ATTACK;

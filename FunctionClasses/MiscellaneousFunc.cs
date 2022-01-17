@@ -40,7 +40,7 @@ namespace PokemonGame.FunctionClasses
             {
                 publicInformations.LowerCase[i] = publicInformations.pokemonchoices[i].ToLower();
             }
-            Main.ProgramMain.OpeningLoading();
+            ProgramMain.OpeningLoading();
             do //Pokemon
             {
                 Console.Clear();
@@ -118,7 +118,7 @@ namespace PokemonGame.FunctionClasses
             {
                 publicInformations.LowerCase[i] = publicInformations.pokemonchoices[i].ToLower();
             }
-            Main.ProgramMain.OpeningLoading();
+            ProgramMain.OpeningLoading();
             do //Pokemon
             {
                 Console.Clear();
@@ -216,7 +216,7 @@ namespace PokemonGame.FunctionClasses
 
                 if (DEVELOPER_OPTIONS.DEVELOPER_ENABLED == true)
                 {
-                    Console.WriteLine(string.Format("                                 {0,2}[DEVELOPER ACCESS]{1,2}                                    |", prefix3, prefix30));
+                    Console.WriteLine(string.Format("                                  {0,2}[DEVELOPER ACCESS]{1,2}                                   |", prefix3, prefix30));
                 }
                 else
                 {
@@ -747,8 +747,7 @@ namespace PokemonGame.FunctionClasses
                 input = Console.ReadKey();
             } while (input.Key != ConsoleKey.Enter);
 
-            Thread.Sleep(1500);
-            Console.ReadKey();
+            Thread.Sleep(500);
         }
 
     }
