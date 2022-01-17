@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PokemonGame;
+using PokemonGame.Main;
 using PokemonGame.informationClass;
 
 namespace PokemonGame.FunctionClasses.HealthManip

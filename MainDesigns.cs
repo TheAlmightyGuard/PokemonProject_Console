@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PokemonGame.FunctionClasses.InventoryMain;
-using PokemonGame;
+using PokemonGame.Main;
 using PokemonGame.informationClass;
 
 namespace PokemonGame.MainDes

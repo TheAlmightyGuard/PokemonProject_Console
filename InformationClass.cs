@@ -238,6 +238,6 @@ namespace PokemonGame.informationClass
 
     public class DEVELOPER_OPTIONS
     {
-        public static bool DEVELOPER_ENABLED = true;
+        public static bool DEVELOPER_ENABLED = false;
     }
 }
