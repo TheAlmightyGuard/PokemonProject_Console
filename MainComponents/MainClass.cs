@@ -11,7 +11,6 @@ using PokemonGame.FunctionClasses.InventoryMain;
 using PokemonGame.FunctionClasses.HealthManip;
 using PokemonGame.FunctionClasses.PokemonChoice;
 using System.Threading;
-using PokemonGame.FunctionClasses.MusicPlayer;
 using PokemonGame.informationClass;
 
 namespace PokemonGame.MainComponents.Main

@@ -303,7 +303,7 @@ namespace PokemonGame.FunctionClasses
                     prefix30 = " <";
                 }
 
-                MusicPlayer.MusicPlayerC.ButtonClick();
+                MusicPlayerC.ButtonClick();
                 //for (int i=0; i <=3; i++)
                 //{
                 //    Thread.Sleep(200);
@@ -420,7 +420,7 @@ namespace PokemonGame.FunctionClasses
                     prefix10 = "";
                 }
 
-                MusicPlayer.MusicPlayerC.ButtonClick();
+                MusicPlayerC.ButtonClick();
                 //for (int i=0; i <=3; i++)
                 //{
                 //    Thread.Sleep(200);
@@ -530,7 +530,7 @@ namespace PokemonGame.FunctionClasses
                     prefix30 = " <";
                 }
 
-                MusicPlayer.MusicPlayerC.ButtonClick();
+                MusicPlayerC.ButtonClick();
                 if (pressed != ConsoleKey.Enter)
                 {
                     continue;

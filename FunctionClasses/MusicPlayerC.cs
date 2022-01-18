@@ -9,7 +9,7 @@ using NAudio.Wave;
 using PokemonGame.informationClass;
 using System.Reflection;
 
-namespace PokemonGame.FunctionClasses.MusicPlayer
+namespace PokemonGame
 {
     class MusicPlayerC
     {

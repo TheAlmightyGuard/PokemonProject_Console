@@ -8,25 +8,28 @@
     ".NETFramework,Version=v4.7.2": []
   },
   "packageFolders": {
-    "C:\\Users\\23pastor\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\ryann\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\CPET-SVR\\prod-homedirs$\\23pastor\\My Documents\\Visual Studio 2019\\Projects_C_Sharp_Ryann\\PokemonGame (v5.0) (V1.3)\\PokemonGame.csproj",
+      "projectUniqueName": "C:\\Users\\ryann\\Desktop\\PokemonGame (v5.0) (V1.3)\\PokemonGame.csproj",
       "projectName": "PokemonGame",
-      "projectPath": "\\\\CPET-SVR\\prod-homedirs$\\23pastor\\My Documents\\Visual Studio 2019\\Projects_C_Sharp_Ryann\\PokemonGame (v5.0) (V1.3)\\PokemonGame.csproj",
-      "packagesPath": "C:\\Users\\23pastor\\.nuget\\packages\\",
-      "outputPath": "\\\\CPET-SVR\\prod-homedirs$\\23pastor\\My Documents\\Visual Studio 2019\\Projects_C_Sharp_Ryann\\PokemonGame (v5.0) (V1.3)\\obj\\",
+      "projectPath": "C:\\Users\\ryann\\Desktop\\PokemonGame (v5.0) (V1.3)\\PokemonGame.csproj",
+      "packagesPath": "C:\\Users\\ryann\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ryann\\Desktop\\PokemonGame (v5.0) (V1.3)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\23pastor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ryann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -39,12 +42,16 @@
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net472": {}
+      "net472": {
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+      }
     }
   }
 }

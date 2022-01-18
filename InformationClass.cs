@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using PokemonGame.FunctionClasses.MusicPlayer;
 
 namespace PokemonGame.informationClass
 {
@@ -238,6 +237,6 @@ namespace PokemonGame.informationClass
 
     public class DEVELOPER_OPTIONS
     {
-        public static bool DEVELOPER_ENABLED = false;
+        public static bool DEVELOPER_ENABLED = true;
     }
 }

@@ -7,7 +7,6 @@ using PokemonGame.MainDes;
 using PokemonGame.Main;
 using PokemonGame.informationClass;
 using System.Media;
-using PokemonGame.FunctionClasses.MusicPlayer;
 
 namespace PokemonGame.FunctionClasses.PokemonChoice
 {

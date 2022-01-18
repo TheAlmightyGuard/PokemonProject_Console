@@ -22,7 +22,7 @@ namespace PokemonGame.FunctionClasses.HealthManip
 
                     if (change > 10)
                     {
-                        MusicPlayer.MusicPlayerC.stopLow();
+                        MusicPlayerC.stopLow();
                         pokeInformation.basicInfo.Health = change;
                     }
                     else
@@ -56,9 +56,9 @@ namespace PokemonGame.FunctionClasses.HealthManip
                 {
                     if (change <= 10)
                     {
-                        if (MusicPlayer.MusicPlayerC.playingHealth == false)
+                        if (MusicPlayerC.playingHealth == false)
                         {
-                            MusicPlayer.MusicPlayerC.LowHealth();
+                            MusicPlayerC.LowHealth();
                             pokeInformation.basicInfo.Health = change;
                         }
                         else
