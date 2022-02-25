@@ -41,7 +41,7 @@ namespace PokemonGame.Main
             "SharpCompress.dll",
             "System.Buffers.dll",
             "System.Runtime.CompilerServices.Unsafe.dll",
-            "System.Text.Encoding.CodePages.dl"
+            "System.Text.Encoding.CodePages.dlL"
         };
 
         public static List<string> dllListFound = new List<string>();
