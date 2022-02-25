@@ -1,0 +1,16 @@
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\DnsClient.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\MongoDB.Bson.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\MongoDB.Driver.Core.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\MongoDB.Driver.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\MongoDB.Libmongocrypt.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\NAudio.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\Newtonsoft.Json.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\SharpCompress.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\System.Buffers.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\System.Net.Http.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\DLLs\System.Text.Encoding.CodePages.dll
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\PokemonGame.exe
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\PokemonGame.exe.config
+C:\Users\ryann\Desktop\PokemonGame (v5.0) (V1.4)\bin\Release\net472\publish\PokemonGame.pdb

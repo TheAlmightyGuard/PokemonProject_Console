@@ -1,0 +1,156 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <StartupObject></StartupObject>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <ApplicationIcon>Char.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/TheAlmightyGuard/PokemonProject_Console</PackageProjectUrl>
+    <Copyright>© 2022 Ryann Pastolero</Copyright>
+    <Product>Pokemon Battle C#</Product>
+    <Company>Ryann Inc.</Company>
+    <Authors>Ryann Lourd Yambao Pastolero</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn />
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DnsClient - Copier.dll" />
+    <None Remove="DnsClient.dll" />
+    <None Remove="MongoDB - Copier.Bson.dll" />
+    <None Remove="MongoDB - Copier.Driver.Core.dll" />
+    <None Remove="MongoDB - Copier.Driver.dll" />
+    <None Remove="MongoDB - Copier.Libmongocrypt.dll" />
+    <None Remove="MongoDB.Bson.dll" />
+    <None Remove="MongoDB.Driver.Core.dll" />
+    <None Remove="MongoDB.Driver.dll" />
+    <None Remove="MongoDB.Libmongocrypt.dll" />
+    <None Remove="SharpCompress - Copier.dll" />
+    <None Remove="SharpCompress.dll" />
+    <None Remove="System - Copier.Buffers.dll" />
+    <None Remove="System - Copier.Runtime.CompilerServices.Unsafe.dll" />
+    <None Remove="System.Buffers.dll" />
+    <None Remove="System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Remove="System.Text.Encoding.CodePages.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DnsClient.dll" />
+    <EmbeddedResource Include="Resources\MongoDB.Bson.dll" />
+    <EmbeddedResource Include="Resources\MongoDB.Driver.Core.dll" />
+    <EmbeddedResource Include="Resources\MongoDB.Driver.dll" />
+    <EmbeddedResource Include="Resources\MongoDB.Libmongocrypt.dll" />
+    <EmbeddedResource Include="Resources\SharpCompress.dll" />
+    <EmbeddedResource Include="Resources\System.Buffers.dll" />
+    <EmbeddedResource Include="Resources\System.Runtime.CompilerServices.Unsafe.dll" />
+    <EmbeddedResource Include="Resources\System.Text.Encoding.CodePages.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Sounds\BattleSong.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DLLs\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="NAudio\**" />
+    <EmbeddedResource Remove="NAudio\**" />
+    <None Remove="NAudio\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DnsClient">
+      <HintPath>DLLs\DnsClient.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>DLLs\MongoDB.Bson.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>DLLs\MongoDB.Driver.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>DLLs\MongoDB.Driver.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt">
+      <HintPath>DLLs\MongoDB.Libmongocrypt.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>DLLs\NAudio.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>DLLs\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SharpCompress">
+      <HintPath>DLLs\SharpCompress.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>DLLs\System.Buffers.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>DLLs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>DLLs\System.Text.Encoding.CodePages.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
