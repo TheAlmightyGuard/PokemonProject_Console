@@ -41,7 +41,7 @@ namespace PokemonGame.Main
             "SharpCompress.dll",
             "System.Buffers.dll",
             "System.Runtime.CompilerServices.Unsafe.dll",
-            "System.Text.Encoding.CodePages.dlL"
+            "System.Text.Encoding.CodePages.dll"
         };
 
         public static List<string> dllListFound = new List<string>();
@@ -119,7 +119,7 @@ namespace PokemonGame.Main
                     File.Move(i, destPath);
                     Assembly.Load(File.ReadAllBytes(destPath));
                     missingDownloaded++;
-                    Console.SetCursorPosition(26, 1);
+                    Console.SetCursorPosition(26, 3);
                     Console.Write(missingDownloaded);
                     Console.SetCursorPosition(0, 3);
                 }

@@ -150,3 +150,30 @@ C:\Users\ryann\Desktop\PokemonGame (V0.9)\obj\Debug\net472\PokemonGame.pdb
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.AssemblyInfo.cs
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.exe
 \\CPET-SVR\prod-homedirs$\23pastor\My Documents\Visual Studio 2019\Projects_C_Sharp_Ryann\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.pdb
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\DnsClient.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\MongoDB.Bson.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\MongoDB.Driver.Core.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\MongoDB.Driver.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\MongoDB.Libmongocrypt.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\NAudio.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\Newtonsoft.Json.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\SharpCompress.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\System.Buffers.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\System.Net.Http.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\DLLs\System.Text.Encoding.CodePages.dll
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\PokemonGame.exe.config
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\PokemonGame.exe
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\bin\Debug\net472\PokemonGame.pdb
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.csproj.AssemblyReference.cache
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.exe.config
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.Properties.Resources.resources
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.csproj.GenerateResource.cache
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.AssemblyInfoInputs.cache
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.AssemblyInfo.cs
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.csproj.CoreCompileInputs.cache
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.exe
+C:\Users\bamfo\Desktop\PokemonProject_Console-master\obj\Debug\net472\PokemonGame.pdb
